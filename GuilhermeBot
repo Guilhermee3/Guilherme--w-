@@ -57,7 +57,7 @@
       curates: 0
     };
 
-      settings.prototype.pupScriptUrl = 'https://raw.github.com/Guilhermee3/Guilherme--w-/master/GuilhermeBot';
+      settings.prototype.pupScriptUrl = 'https://github.com/Guilhermee3/Guilherme--w-/blob/master/GuilhermeBot';
 
     settings.prototype.afkTime = 15 * 60 * 1000;
 
