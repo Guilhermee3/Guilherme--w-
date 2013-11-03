@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name Guilherme ²w²
+// @name Monkeybro
 (function() {
   var Command, RoomHelper, User, afkCheck, afksCommand, allAfksCommand, announceCurate, antispam, apiHooks, avgVoteRatioCommand, badQualityCommand, beggar, 
 
@@ -375,7 +375,7 @@ child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.
   })();
 
   pupOnline = function() {
-    return API.sendChat(" ChatBot ²w² ONLINE!");
+    return API.sendChat("Monkeybro chegou nessa delícia!");
   };
 
   populateUserData = function() {
@@ -419,7 +419,9 @@ child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.
           secsLastActive = timeSinceLastActivity / 1000;
           if (user.getWarningCount() === 0) {
             user.warn();
-            _results.push(API.sendChat("@" + user.getUser().username + ", Eu não vi você votar ou falar no chat nos ultimos 24 minutos,vote ou fale nos próximos 5 minutos ou será removido"));
+            _results.push(API.sendChat("@" + user.getUser().username + ", I haven't seen you chat or vote in at least 24 minutes. If you don't show activity in 5 
+
+minutes I will remove you."));
           } else if (user.getWarningCount() === 1) {
             lastWarned = user.getLastWarning();
             timeSinceLastWarning = now.getTime() - lastWarned.getTime();
@@ -427,7 +429,9 @@ child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.
             if (timeSinceLastWarning > fiveMinutes) {
               user.warn();
               warnMsg = "@" + user.getUser().username;
-              warnMsg += ", Eu não vi você votar ou falar no chat nos ultimos 03 minutos.  Este é seu ultimo aviso. Se você não votar ou falar no próximo minuto será removido.";
+              warnMsg += ", I haven't seen you chat or vote in at least 30 minutes now.  This is your second and FINAL warning.  If you do not chat or vote in the next 
+
+minute I will remove you.";
               _results.push(API.sendChat(warnMsg));
             } else {
               _results.push(void 0);
@@ -439,7 +443,7 @@ child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.
             if (timeSinceLastWarning > oneMinute) {
               DJs = API.getDJs();
               if (DJs.length > 0 && DJs[0].id !== user.getUser().id) {
-                API.sendChat("@" + user.getUser().username + ",Você teve 2 avisos. Por favor fique ativo no chat e/ou votando.");
+                API.sendChat("@" + user.getUser().username + ", you had 2 warnings. Please stay active by chatting or voting.");
                 API.moderateRemoveDJ(id);
                 _results.push(user.warn());
               } else {
@@ -826,7 +830,7 @@ child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.
 
     churrosCommand.prototype.randomChurros = function() {
       var r, churros;
-      churros = ["Churros de Doce de Leite", "", "Suco de Cajú", "Picolé", "Churros Supremo", "Churros Grelhado.", 
+      churros = ["Churros de Doce de Leite", "Pênis", "Churros duplo com Suco de Cajú", "Picolé de coxinha", "Churros Supremo", "Churros Grelhados com Banana", 
 
 "Cupcake homossexual", "Cheetos do Deaddy"];
       r = Math.floor(Math.random() * churros.length);
