@@ -78,7 +78,7 @@ child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.
       curates: 0
     };
 
-    settings.prototype.pupScriptUrl = '';
+    settings.prototype.pupScriptUrl = 'https://raw.github.com/Guilhermee3/Guilherme--w-/master/guilherme';
 
     settings.prototype.afkTime = 24 * 60 * 1000;
 
@@ -375,7 +375,7 @@ child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.
   })();
 
   pupOnline = function() {
-    return API.sendChat("Monkeybro chegou nessa delícia!");
+    return API.sendChat(" ChatBot ²w² ONLINE!");
   };
 
   populateUserData = function() {
