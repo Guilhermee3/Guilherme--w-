@@ -57,7 +57,7 @@
       curates: 0
     };
 
-    settings.prototype.pupScriptUrl = 'https://raw.github.com/Guilhermee3/Guilherme--w-/master/GuilhermeBot';
+      settings.prototype.pupScriptUrl = 'https://raw.github.com/Guilhermee3/Guilherme--w-/master/GuilhermeBot';
 
     settings.prototype.afkTime = 15 * 60 * 1000;
 
@@ -952,7 +952,7 @@
     allAfksCommand.prototype.init = function() {
       this.command = '!allafks';
       this.parseType = 'exact';
-      return this.rankPrivelege = 'manager';
+      return this.rankPrivelege = 'bouncer';
     };
 
     allAfksCommand.prototype.functionality = function() {
