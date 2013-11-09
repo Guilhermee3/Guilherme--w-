@@ -29,7 +29,7 @@ function fanEveryone(data) {
 API.on(API.USER_FAN, fanEveryone);
  
 //chat commands and so on below here
-var intervalMessage = setInterval(function(){message();},190000);
+var intervalMessage = setInterval(function(){message();},240000);
  
 function message(){
 var m, msgs;
@@ -52,7 +52,7 @@ function command(value)
                 break;
                
                 case "/restart":
-            intervalMessage = setInterval(function(){message();},190000);
+            intervalMessage = setInterval(function(){message();},240000);
                 break;
                
                 case "/fans?":
